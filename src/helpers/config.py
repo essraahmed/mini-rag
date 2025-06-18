@@ -5,7 +5,8 @@ class settings(BaseSettings):
     APP_Name: str
     APP_Version: str
     OpenAI_API_Key: str
-    FILE
+    FILE_ALLOWED_EXTENSIONS : list
+    FILE_MAX_SIZE : int
 
     class Config:
         env_file = '.env'
